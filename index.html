@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scr/style/index.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="time" id="time">19:45</div>
+        <div class="date" id="date">Thursday | Sep 21</div>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Şəhəri daxil et">
+            <button onclick="searchWeather()">Axtar</button>
+        </div>
+        <div class="weather-forecast">
+            <div class="forecast-day">
+                <p>Mon 18</p>
+                <img src="sunny.png" alt="sunny">
+                <p>26° / 29°</p>
+            </div>
+            <div class="forecast-day">
+                <p>Tue 19</p>
+                <img src="sunny.png" alt="sunny">
+                <p>28° / 30°</p>
+            </div>
+            <div class="forecast-day">
+                <p>Wed 20</p>
+                <img src="cloudy.png" alt="cloudy">
+                <p>20° / 26°</p>
+            </div>
+            <div class="forecast-day">
+                <p>Thu 21</p>
+                <img src="cloudy.png" alt="cloudy">
+                <p>25° / 29°</p>
+            </div>
+        </div>
+        <div class="weather-card">
+            <h2 id="location"></h2><!--Barcelona, Spain-->
+            <p class="temp" id="temperature"></p><!--24°-->
+            <p class="details" id="Description"></p><!--Sunny-->
+            <p class="details" id="country"></p><!--Country-->
+            <p class="details" id="speed"></p><!--Wind Speed-->
+        </div>
+    </div>
+
+
+
+    <script src="./scr/js/index.js"></script>
+</body>
+</html>
