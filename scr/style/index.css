@@ -169,6 +169,9 @@ body {
         flex-direction: column;
         gap: 15px;
     }
+    .weather-container{
+        border-radius: 0;
+    }
 
     .search-container input,
     .search-container button {
