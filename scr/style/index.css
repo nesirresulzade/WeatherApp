@@ -19,18 +19,28 @@ body {
     width: 90%;
     max-width: 400px;
     transition: all 0.3s ease-in-out;
+    min-height: 75vh;
+}
+.weather-card, .weather-forecast{
+    background: rgba(255, 255, 255, 0.2); /* Ağ rəngin 20% şəffaflığı */
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Arxa planı blur edirik */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Kölgə əlavə edirik */
 }
 
 .time {
     font-size: 50px;
     font-weight: bold;
     color: #fff;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
 
 .date {
     font-size: 22px;
     color: #fff;
     margin-bottom: 10px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
 
 .search-container {
@@ -93,13 +103,14 @@ body {
 .weather-card h2 {
     font-size: 24px;
     color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .weather-card .temp {
     font-size: 38px;
     font-weight: bold;
     color: #fff;
+    margin-top: 5px;
 }
 
 .weather-card .details {
@@ -111,6 +122,7 @@ body {
     .weather-container {
         max-width: 550px;
         padding: 50px;
+        min-height: 70vh;
     }
 
     .search-container input, .search-container button {
@@ -122,6 +134,7 @@ body {
     .weather-container {
         max-width: 800px;
         padding: 60px;
+        min-height: 75vh;
     }
 
     .search-container input, .search-container button {
