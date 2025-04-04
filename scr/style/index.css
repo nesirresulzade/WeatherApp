@@ -185,4 +185,7 @@ body {
         max-width: 100%;
         /* kiçik ekranlarda input və button tam genişlikdə olacaq */
     }
+    .weather-container{
+        height: 642px;
+    }
 }
