@@ -12,10 +12,10 @@ const weatherForecast = document.querySelector(".weather-forecast");
 
 
 const weatherImages = {
-    "clear": "./scr/gifts/sunny.gif",
+    "clear": "./scr/gifts/Vp9G.gif",
     "clouds": "./scr/gifts/clouds.gif",
-    "rain": "./scr/gifts/rainy.gif",
-    "drizzle": "./scr/gifts/rainy.gif",
+    "rain": "./scr/gifts/Rainy_Day.gif",
+    "drizzle": "./scr/gifts/Rainy_Day.gif",
     "thunderstorm": "./scr/gifts/storm.gif",
     "snow": "./scr/gifts/snowy.gif",
     "mist": "./scr/gifts/foggy.gif",
