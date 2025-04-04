@@ -12,15 +12,15 @@ const weatherForecast = document.querySelector(".weather-forecast");
 
 
 const weatherImages = {
-    "clear": "./scr/img/sunny2.jpg",
-    "clouds": "./scr/img/cloudy.jpg",
-    "rain": "./scr/img/rainy.jpg",
-    "drizzle": "./scr/img/rainy.jpg",
-    "thunderstorm": "./scr/img/storm.jpg",
-    "snow": "./scr/img/snowy3.jpg",
-    "mist": "./scr/img/foggy.jpg",
-    "fog": "./scr/img/foggy.jpg",
-    "haze": "./scr/img/foggy.jpg",
+    "clear": "./scr/gifts/sunny.gif",
+    "clouds": "./scr/gifts/clouds.gif",
+    "rain": "./scr/gifts/rainy.gif",
+    "drizzle": "./scr/gifts/rainy.gif",
+    "thunderstorm": "./scr/gifts/storm.gif",
+    "snow": "./scr/gifts/snowy.gif",
+    "mist": "./scr/gifts/foggy.gif",
+    "fog": "./scr/gifts/foggy.gif",
+    "haze": "./scr/gifts/foggy.gif",
 };
 
 // Sayt açıldıqda hava məlumatları gizli olsun
@@ -65,7 +65,7 @@ function updateCurrentWeather(data) {
     countryElement.textContent = `Country: ${data.city.country}`;
     speedElement.textContent = `Wind Speed: ${data.list[0].wind.speed} m/s`;
     const weatherCondition = data.list[0].weather[0].main.toLowerCase();
-    const backgroundImage = weatherImages[weatherCondition] || "./scr/img/default.jpg"; 
+    const backgroundImage = weatherImages[weatherCondition] || "./scr/gifts/default.gif"; 
 
     document.querySelector(".weather-container").style.backgroundImage = `url(${backgroundImage})`;
     document.querySelector(".weather-container").style.backgroundSize = "cover";
@@ -96,7 +96,6 @@ function updateForecast(data) {
         }
     }
 }
-
 function updateTime() {
     const now = new Date();
     let hours = now.getHours();
