@@ -150,7 +150,7 @@ body {
     .weather-container {
         max-width: 100%;
         padding: 60px;
-        min-height: 75vh;
+        min-height: 85vh;
     }
 
     .search-container input,
@@ -185,7 +185,4 @@ body {
         max-width: 100%;
         /* kiçik ekranlarda input və button tam genişlikdə olacaq */
     }
-    /* .weather-container{
-        height: 642px;
-    } */
 }
